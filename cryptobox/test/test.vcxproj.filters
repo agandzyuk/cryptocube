@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\cryptobox">
+      <UniqueIdentifier>{95cd3e74-b0d8-4318-a6f8-3262e694c8ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\cryptobox">
+      <UniqueIdentifier>{4d689a5f-d2ff-4bc3-85cb-2e3601427572}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_enque_buffer_sender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test_otp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\aes_base.cpp">
+      <Filter>Source Files\cryptobox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\aes_key_exchange.cpp">
+      <Filter>Source Files\cryptobox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\aes_package.cpp">
+      <Filter>Source Files\cryptobox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\enque_buffer_sender.cpp">
+      <Filter>Source Files\cryptobox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gap_detector.cpp">
+      <Filter>Source Files\cryptobox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\otp_base.cpp">
+      <Filter>Source Files\cryptobox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\otp_package.cpp">
+      <Filter>Source Files\cryptobox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\raw_message.cpp">
+      <Filter>Source Files\cryptobox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ssl_tunnel.cpp">
+      <Filter>Source Files\cryptobox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="test_classes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test_defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\aes_base.h">
+      <Filter>Header Files\cryptobox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\aes_package.h">
+      <Filter>Header Files\cryptobox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\configuration.h">
+      <Filter>Header Files\cryptobox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\enque_buffer_sender.h">
+      <Filter>Header Files\cryptobox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\otp_base.h">
+      <Filter>Header Files\cryptobox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\otp_package.h">
+      <Filter>Header Files\cryptobox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\ssl_tunnel.h">
+      <Filter>Header Files\cryptobox</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

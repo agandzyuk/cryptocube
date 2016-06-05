@@ -1,0 +1,44 @@
+# Common make definitions for make.
+# $Id: LinuxMakefile.defines,v 1.2 2004/08/02 14:41:39 tye Exp $
+#
+# Definitions required in all program directories to compile and link
+# programs.
+
+# Common temp files to delete from each directory.
+TEMP_FILES = core core.* *.o temp.* *.tmp *~
+
+SUFFIXES = .o .cpp .c
+.SUFFIXES: $(SUFFIXES)
+
+LIB_PATH = 
+
+DEBUG_FL = -ggdb -D_DEBUG -Wall -Wno-c++0x-compat
+OPTIM_FL = -O -DNDEBUG
+
+C++ = g++ # C++ compiler
+GCC = g++ # to produce .depend file
+
+# MEMORY_MONITOR_LIBRARY =  -ldmallocthcxx
+
+CPP_FL = $(DEBUG_FL) $(OPTIM_FL) $(LOCAL_CPP_FL) -D_LINUX -pipe -g -fPIE -D_REENTRANT
+
+.cpp.o:
+	$(C++) -c $(CPP_FL) $(LOCAL_INCLUDE_PATH) $<
+
+.c.o:
+	$(C++) -c $(CPP_FL) $(LOCAL_INCLUDE_PATH) $<
+
+all: default
+default: release
+
+release: DEBUG_FL =
+debug: OPTIM_FL = 
+
+depend:
+	$(GCC) -MM -D_LINUX $(LOCAL_CPP_FL) $(SRC) $(LOCAL_INCLUDE_PATH) > .depend
+
+clean:
+	@rm -rf $(TEMP_FILES)
+
+
+include .depend

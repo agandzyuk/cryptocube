@@ -1,0 +1,348 @@
+aes_base.o: ../../cryptobox/src/aes_base.cpp ../include/aes_base.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/common_types.h ../include/configuration.h \
+ ../../commonlib/include/common_types.h ../../commonlib/include/useful.h \
+ ../../commonlib/include/common_defines.h
+aes_key_exchange.o: ../../cryptobox/src/aes_key_exchange.cpp \
+ ../include/aes_key_exchange.h ../include/aes_base.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/common_types.h ../include/aes_package.h \
+ ../include/raw_message.h ../../commonlib/include/message.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/useful.h ../include/connection.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/guard.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/socket.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/rawsocket.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/refcounted.h \
+ ../include/enque_buffer_sender.h ../../commonlib/include/thread.h \
+ ../../commonlib/include/eventp.h ../include/configuration.h \
+ ../../commonlib/include/common_types.h ../../commonlib/include/useful.h \
+ ../include/otp_base.h ../include/otp_package.h ../include/gap_detector.h \
+ ../../commonlib/include/file.h ../../commonlib/include/timer.h \
+ ../../commonlib/include/thread.h ../../commonlib/include/task.h \
+ ../../commonlib/include/notifications_mgr_base.h \
+ ../../commonlib/include/lockedfile.h ../../commonlib/include/file.h \
+ ../../commonlib/include/refcounted.h ../../commonlib/include/boxtime.h
+aes_package.o: ../../cryptobox/src/aes_package.cpp \
+ ../include/aes_package.h ../include/raw_message.h \
+ ../../commonlib/include/message.h ../../commonlib/include/common_types.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/useful.h ../include/connection.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/guard.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/socket.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/rawsocket.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/refcounted.h \
+ ../include/aes_base.h ../../commonlib/include/common_defines.h \
+ ../include/ip_package.h ../include/configuration.h \
+ ../../commonlib/include/common_types.h ../../commonlib/include/useful.h
+enque_buffer_sender.o: ../../cryptobox/src/enque_buffer_sender.cpp \
+ ../include/enque_buffer_sender.h ../../commonlib/include/thread.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/common_types.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/guard.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/eventp.h \
+ ../include/raw_message.h ../../commonlib/include/message.h \
+ ../../commonlib/include/useful.h ../include/connection.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/socket.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/rawsocket.h \
+ ../../commonlib/include/refcounted.h \
+ ../../commonlib/include/notifications_mgr_base.h \
+ ../../commonlib/include/buffer.h ../../commonlib/include/file.h
+gap_detector.o: ../../cryptobox/src/gap_detector.cpp \
+ ../include/gap_detector.h ../include/otp_package.h \
+ ../include/aes_package.h ../include/raw_message.h \
+ ../../commonlib/include/message.h ../../commonlib/include/common_types.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/useful.h ../include/connection.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/guard.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/socket.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/rawsocket.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/refcounted.h \
+ ../include/aes_base.h ../../commonlib/include/common_defines.h \
+ ../include/enque_buffer_sender.h ../../commonlib/include/thread.h \
+ ../../commonlib/include/eventp.h ../../commonlib/include/file.h \
+ ../../commonlib/include/timer.h ../../commonlib/include/thread.h \
+ ../../commonlib/include/task.h ../../commonlib/include/useful.h \
+ ../include/configuration.h ../../commonlib/include/common_types.h \
+ ../include/otp_base.h ../include/gap_detector.h
+otp_base.o: ../../cryptobox/src/otp_base.cpp ../include/otp_base.h \
+ ../include/enque_buffer_sender.h ../../commonlib/include/thread.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/common_types.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/guard.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/eventp.h \
+ ../include/raw_message.h ../../commonlib/include/message.h \
+ ../../commonlib/include/useful.h ../include/connection.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/socket.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/rawsocket.h \
+ ../../commonlib/include/refcounted.h ../include/otp_package.h \
+ ../include/aes_package.h ../include/aes_base.h \
+ ../../commonlib/include/common_defines.h ../include/gap_detector.h \
+ ../../commonlib/include/file.h ../../commonlib/include/timer.h \
+ ../../commonlib/include/thread.h ../../commonlib/include/task.h \
+ ../../commonlib/include/useful.h \
+ ../../commonlib/include/system_exception.h \
+ ../include/enque_buffer_sender.h \
+ ../../commonlib/include/notifications_mgr_base.h \
+ ../include/aes_key_exchange.h ../include/ssl_tunnel.h \
+ ../../cryptossl/include/ssl_connection_adapter.h \
+ ../../cryptossl/include/connection_base.h \
+ ../../commonlib/include/system_defines.h \
+ ../../cryptossl/include/socket_dispatcher.h \
+ ../../cryptossl/include/simple_udpsocket.h \
+ ../../commonlib/include/socket.h \
+ ../../cryptossl/include/ssl_client_socket.h \
+ ../../cryptossl/include/ssl_socket.h ../../commonlib/include/tcpsocket.h \
+ ../../cryptossl/include/ssl_context.h \
+ ../../commonlib/include/common_types.h \
+ ../../cryptossl/include/ssl_server_adapter.h \
+ ../../cryptossl/include/server_base.h \
+ ../../cryptossl/include/ssl_server_socket.h \
+ ../../commonlib/include/server_socket.h \
+ ../../commonlib/include/client_socket.h \
+ ../../cryptossl/include/ssl_exception.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../cryptossl/include/ssl_context.h \
+ ../../commonlib/include/ipaddress.h ../include/configuration.h \
+ ../../commonlib/include/boxtime.h
+otp_package.o: ../../cryptobox/src/otp_package.cpp \
+ ../include/otp_package.h ../include/aes_package.h \
+ ../include/raw_message.h ../../commonlib/include/message.h \
+ ../../commonlib/include/common_types.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/useful.h ../include/connection.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/guard.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/socket.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/rawsocket.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/refcounted.h \
+ ../include/aes_base.h ../../commonlib/include/common_defines.h \
+ ../include/ip_package.h ../../commonlib/include/file.h
+raw_message.o: ../../cryptobox/src/raw_message.cpp \
+ ../include/raw_message.h ../../commonlib/include/message.h \
+ ../../commonlib/include/common_types.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/useful.h ../include/connection.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/guard.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/socket.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/rawsocket.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/refcounted.h
+ssl_tunnel.o: ../../cryptobox/src/ssl_tunnel.cpp ../include/ssl_tunnel.h \
+ ../../cryptossl/include/ssl_connection_adapter.h \
+ ../../cryptossl/include/connection_base.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/common_types.h ../../commonlib/include/useful.h \
+ ../../cryptossl/include/socket_dispatcher.h \
+ ../../cryptossl/include/simple_udpsocket.h \
+ ../../commonlib/include/socket.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/useful.h \
+ ../../commonlib/include/thread.h ../../commonlib/include/mutex.h \
+ ../../commonlib/include/guard.h ../../commonlib/include/mutex.h \
+ ../../cryptossl/include/ssl_client_socket.h \
+ ../../cryptossl/include/ssl_socket.h ../../commonlib/include/tcpsocket.h \
+ ../../commonlib/include/socket.h ../../cryptossl/include/ssl_context.h \
+ ../../commonlib/include/common_types.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/rawsocket.h \
+ ../../cryptossl/include/ssl_server_adapter.h \
+ ../../cryptossl/include/server_base.h \
+ ../../cryptossl/include/ssl_server_socket.h \
+ ../../commonlib/include/server_socket.h \
+ ../../commonlib/include/client_socket.h \
+ ../../cryptossl/include/ssl_exception.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../cryptossl/include/ssl_context.h ../include/enque_buffer_sender.h \
+ ../../commonlib/include/eventp.h ../include/raw_message.h \
+ ../../commonlib/include/message.h ../include/connection.h \
+ ../../commonlib/include/refcounted.h ../../commonlib/include/ipaddress.h \
+ ../../commonlib/include/timer.h ../../commonlib/include/thread.h \
+ ../../commonlib/include/task.h ../../cryptossl/include/ssl_initializer.h \
+ ../include/otp_base.h ../include/otp_package.h ../include/aes_package.h \
+ ../include/aes_base.h ../../commonlib/include/common_defines.h \
+ ../include/gap_detector.h ../../commonlib/include/file.h \
+ ../../commonlib/include/notifications_mgr_base.h
+main.o: main.cpp test_defines.h ../../commonlib/include/mutex.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/common_types.h ../../commonlib/include/guard.h \
+ test_classes.h ../include/enque_buffer_sender.h \
+ ../../commonlib/include/thread.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/eventp.h \
+ ../include/raw_message.h ../../commonlib/include/message.h \
+ ../../commonlib/include/useful.h ../include/connection.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/socket.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/rawsocket.h \
+ ../../commonlib/include/refcounted.h \
+ ../../commonlib/include/notifications_mgr_base.h ../include/ssl_tunnel.h \
+ ../../cryptossl/include/ssl_connection_adapter.h \
+ ../../cryptossl/include/connection_base.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/useful.h \
+ ../../cryptossl/include/socket_dispatcher.h \
+ ../../cryptossl/include/simple_udpsocket.h \
+ ../../commonlib/include/socket.h \
+ ../../cryptossl/include/ssl_client_socket.h \
+ ../../cryptossl/include/ssl_socket.h ../../commonlib/include/tcpsocket.h \
+ ../../cryptossl/include/ssl_context.h \
+ ../../commonlib/include/common_types.h \
+ ../../cryptossl/include/ssl_server_adapter.h \
+ ../../cryptossl/include/server_base.h \
+ ../../cryptossl/include/ssl_server_socket.h \
+ ../../commonlib/include/server_socket.h \
+ ../../commonlib/include/client_socket.h \
+ ../../cryptossl/include/ssl_exception.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../cryptossl/include/ssl_context.h ../include/enque_buffer_sender.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/timer.h \
+ ../../commonlib/include/thread.h ../../commonlib/include/task.h \
+ ../include/configuration.h ../include/aes_key_exchange.h \
+ ../include/aes_base.h ../../commonlib/include/common_defines.h \
+ ../include/aes_package.h
+test_classes.o: test_classes.cpp test_classes.h test_defines.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/common_types.h ../../commonlib/include/guard.h \
+ ../include/enque_buffer_sender.h ../../commonlib/include/thread.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/eventp.h \
+ ../include/raw_message.h ../../commonlib/include/message.h \
+ ../../commonlib/include/useful.h ../include/connection.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/socket.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/rawsocket.h \
+ ../../commonlib/include/refcounted.h \
+ ../../commonlib/include/notifications_mgr_base.h ../include/ssl_tunnel.h \
+ ../../cryptossl/include/ssl_connection_adapter.h \
+ ../../cryptossl/include/connection_base.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/useful.h \
+ ../../cryptossl/include/socket_dispatcher.h \
+ ../../cryptossl/include/simple_udpsocket.h \
+ ../../commonlib/include/socket.h \
+ ../../cryptossl/include/ssl_client_socket.h \
+ ../../cryptossl/include/ssl_socket.h ../../commonlib/include/tcpsocket.h \
+ ../../cryptossl/include/ssl_context.h \
+ ../../commonlib/include/common_types.h \
+ ../../cryptossl/include/ssl_server_adapter.h \
+ ../../cryptossl/include/server_base.h \
+ ../../cryptossl/include/ssl_server_socket.h \
+ ../../commonlib/include/server_socket.h \
+ ../../commonlib/include/client_socket.h \
+ ../../cryptossl/include/ssl_exception.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../cryptossl/include/ssl_context.h ../include/enque_buffer_sender.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/timer.h \
+ ../../commonlib/include/thread.h ../../commonlib/include/task.h \
+ ../include/configuration.h
+test_enque_buffer_sender.o: test_enque_buffer_sender.cpp test_classes.h \
+ test_defines.h ../../commonlib/include/mutex.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/common_types.h ../../commonlib/include/guard.h \
+ ../include/enque_buffer_sender.h ../../commonlib/include/thread.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/eventp.h \
+ ../include/raw_message.h ../../commonlib/include/message.h \
+ ../../commonlib/include/useful.h ../include/connection.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/socket.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/rawsocket.h \
+ ../../commonlib/include/refcounted.h \
+ ../../commonlib/include/notifications_mgr_base.h ../include/ssl_tunnel.h \
+ ../../cryptossl/include/ssl_connection_adapter.h \
+ ../../cryptossl/include/connection_base.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/useful.h \
+ ../../cryptossl/include/socket_dispatcher.h \
+ ../../cryptossl/include/simple_udpsocket.h \
+ ../../commonlib/include/socket.h \
+ ../../cryptossl/include/ssl_client_socket.h \
+ ../../cryptossl/include/ssl_socket.h ../../commonlib/include/tcpsocket.h \
+ ../../cryptossl/include/ssl_context.h \
+ ../../commonlib/include/common_types.h \
+ ../../cryptossl/include/ssl_server_adapter.h \
+ ../../cryptossl/include/server_base.h \
+ ../../cryptossl/include/ssl_server_socket.h \
+ ../../commonlib/include/server_socket.h \
+ ../../commonlib/include/client_socket.h \
+ ../../cryptossl/include/ssl_exception.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../cryptossl/include/ssl_context.h ../include/enque_buffer_sender.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/timer.h \
+ ../../commonlib/include/thread.h ../../commonlib/include/task.h
+test_otp.o: test_otp.cpp test_classes.h test_defines.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/common_defines.h \
+ ../../commonlib/include/common_types.h ../../commonlib/include/guard.h \
+ ../include/enque_buffer_sender.h ../../commonlib/include/thread.h \
+ ../../commonlib/include/system_exception.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../commonlib/include/mutex.h ../../commonlib/include/eventp.h \
+ ../include/raw_message.h ../../commonlib/include/message.h \
+ ../../commonlib/include/useful.h ../include/connection.h \
+ ../../commonlib/include/client_socket.h \
+ ../../commonlib/include/tcpsocket.h ../../commonlib/include/socket.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/rawsocket.h \
+ ../../commonlib/include/refcounted.h \
+ ../../commonlib/include/notifications_mgr_base.h ../include/ssl_tunnel.h \
+ ../../cryptossl/include/ssl_connection_adapter.h \
+ ../../cryptossl/include/connection_base.h \
+ ../../commonlib/include/system_defines.h \
+ ../../commonlib/include/useful.h \
+ ../../cryptossl/include/socket_dispatcher.h \
+ ../../cryptossl/include/simple_udpsocket.h \
+ ../../commonlib/include/socket.h \
+ ../../cryptossl/include/ssl_client_socket.h \
+ ../../cryptossl/include/ssl_socket.h ../../commonlib/include/tcpsocket.h \
+ ../../cryptossl/include/ssl_context.h \
+ ../../commonlib/include/common_types.h \
+ ../../cryptossl/include/ssl_server_adapter.h \
+ ../../cryptossl/include/server_base.h \
+ ../../cryptossl/include/ssl_server_socket.h \
+ ../../commonlib/include/server_socket.h \
+ ../../commonlib/include/client_socket.h \
+ ../../cryptossl/include/ssl_exception.h \
+ ../../commonlib/include/generic_exception.h \
+ ../../cryptossl/include/ssl_context.h ../include/enque_buffer_sender.h \
+ ../../commonlib/include/ipaddress.h ../../commonlib/include/timer.h \
+ ../../commonlib/include/thread.h ../../commonlib/include/task.h \
+ ../include/otp_base.h ../include/otp_package.h ../include/aes_package.h \
+ ../include/aes_base.h ../../commonlib/include/common_defines.h \
+ ../include/gap_detector.h ../../commonlib/include/file.h \
+ ../include/configuration.h

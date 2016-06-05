@@ -1,0 +1,1 @@
+del *.log *.in *.out otp_pos*
